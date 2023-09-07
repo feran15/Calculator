@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.calculator {
+    background-color: rgb(0, 0, 0, 0.67);
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid rgb(253, 140, 159);
+
+
+}
+#header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.headerText {
+    padding-left: 9px;
+    margin-top: 3px;
+    font-size: 13px;
+}
+
+.headerButton {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+    
+}
+
+.buttonPadding {
+   
+    padding: 0 15px;
+    font-size: 17.5px;
+    
+}
+
+.buttonPadding2 {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 24px;
+    margin-top: -3px;
+}
+
+#header .hoveredMin:hover {
+    background-color: grey;
+}
+
+#header .hoveredRed:hover{
+    background-color: red;
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 10px;
+}
+
+
+
+#symbols {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.symbolsPad {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.symbolsWord {
+   padding-top: 0;
+   font-weight: 520;
+ 
+}
+
+.symbolsPad2 {
+    padding-right: 10px;
+}
+
+.symbolsHovered:hover {
+     cursor: pointer;
+     background-color: rgba(128, 128, 128, 0.5);
+}
+
+#topButton [type='button'] {
+    border: 0;
+    outline: 0;
+    width: 55.7px;
+    height: 40px;
+    background: transparent;
+    /* display:inline; */
+}
+
+#topButton .greyButton {
+    color: grey;
+}
+
+#topButton .hovered:hover {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+ [type='button'] {
+    border: 0;
+    outline: 0;
+    width: 85px;
+    height: 60px; 
+    font-size: 13px;
+    margin: 0.9px -0.6px;
+    background-color: rgb(0, 0, 0, 0.4);  
+    color: azure; 
+
+}
+
+[type='button']:hover {
+    background-color: gray;
+}
+
+ .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+ .display #textBox {
+   text-align: right;
+   flex: 1;
+   font-size: 45px;
+   font-weight: 500;
+   background: transparent;
+   width: 200px;
+   height: 80px;
+   margin-top: -10px;
+   color: white;
+   border: 0;
+   outline: none;
+   display: block;
+   
+
+}
+
+.display #smallInput {
+    text-align: right;
+    flex: 1;
+    font-size: 15px;
+    background: transparent;
+    width: 100px;
+    height: 35px;
+    color: rgb(170, 170, 170);
+    border: 0;
+    outline: none;
+    margin-bottom: -25px;
+   
+    
+}
+
+/* form .display input:hover {
+    background-color: transparent;
+} */
+
+.darker {
+    background-color: rgb(0, 0, 0, 0.8);
+    font-size: 18px;
+}
+
+.pinkButton {
+    background-color: rgba(245, 66, 120, 0.5);
+}
+
+.pinkButton:hover {
+    background-color: rgb(247, 37, 100);
+}
+
+ .bigger {
+    font-size: 15px;
+   
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.calculator {
+    background-color: rgb(0, 0, 0, 0.7);
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid pink;
+
+}
+#header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerButton {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.buttonPadding {
+    padding: 0 10px;
+}
+
+.buttonPadding2 {
+    padding-left: 10px;
+    font-size: 22px;
+    margin-top: -3px;
+}
+
+
+
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 85px;
+    height: 60px; 
+    font-size: 13px;
+    margin: 0.7px -0.6px;
+    background-color: rgb(0, 0, 0, 0.4);  
+    color: azure;
+    
+
+
+}
+
+.calculator form input:hover {
+    background-color: gray;
+}
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input {
+   text-align: right;
+   flex: 1;
+   font-size: 45px;
+   background: transparent;
+   height: 150px;
+   color: white;
+}
+
+form .display input:hover {
+    background-color: transparent;
+}
+
+.darkerButton .darker {
+    background-color: rgb(0, 0, 0, 0.8);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#pinkButton {
+    background-color: rgba(245, 66, 120, 0.5);
+}
+
+#pinkButton:hover {
+    background-color: rgb(247, 37, 100);
+}
+ */

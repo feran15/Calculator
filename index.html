@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div id="header">
+                <p class="headerText">Calculator</p>
+                <div class="headerButton">
+                    <p class="buttonPadding hoveredMin">–</p>
+                    <p class="buttonPadding hoveredMin">◻</p>
+                    <p class="buttonPadding2 hoveredRed">×</p>
+                </div>
+            </div>
+            <div id="top">
+                <div id="symbols">
+                    <p class="symbolsHovered">≣</p>
+                    <p class="symbolsPad symbolsWord" >Standard</p>
+                    <p class="symbolsPad symbolsHovered" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-up-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
+                        <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
+                      </svg></p>
+                </div>
+                <div>
+                    <p class="symbolsPad2" >↺</p>
+                </div>
+            </div>
+            <form action="">
+                <div class="display">
+                    <input  id="smallInput" type="text" name="display">
+                </div>
+                <div class="display">
+                    <input id="textBox" type="text" name="display" value="">
+                </div>
+
+                <div id="topButton">             
+                    <input class="greyButton" type="button" value="MC">
+                    <input class="greyButton" type="button" value="MR">
+                    <input class="hovered" type="button" value="M+">
+                    <input class="hovered" type="button" value="M-">
+                    <input class="hovered" type="button" value="MS">
+                    <input class="greyButton" type="button" value="M">
+
+                </div>
+
+                <div>
+                    <input type="button" value="%">
+                    <input type="button" value="CE" onclick="deletes2()"  >
+                    <input type="button" value="C" onclick="deletes()">
+                    <input type="button" value="Del" onclick="deletes()">
+                    
+                </div>
+                <div>
+                    <input type="button" value="⅟x">
+                    <input type="button" value="x&sup2">
+                    <input type="button" value="&#8730x">
+                    <input class="bigger" type="button" value="÷" onclick="operate('÷')">
+                </div>
+                <div>
+                    <input class="darker" type="button" value="7" onclick="clicked(7)">
+                    <input class="darker" type="button" value="8" onclick="clicked(8)">
+                    <input class="darker" type="button" value="9" onclick="clicked(9)">
+                    <input class="bigger" type="button" value="×" onclick="operate('*')">
+                </div>
+                <div>
+                    <input class="darker" type="button" value="4" onclick="clicked(4)">
+                    <input class="darker" type="button" value="5" onclick="clicked(5)">
+                    <input class="darker" type="button" value="6" onclick="clicked(6)">
+                    <input type="button" value="—" onclick="operate('-')">
+                </div>
+                <div>
+                    <input class="darker" type="button" value="1" onclick="clicked(1)">
+                    <input class="darker" type="button" value="2" onclick="clicked(2)">
+                    <input class="darker" type="button" value="3" onclick="clicked(3)">
+                    <input class="bigger" type="button" value="+" onclick="operate('+')" >
+                </div>
+                <div>
+                    <input  class="darker" type="button" value="+/-">
+                    <input class="darker" type="button" value="0" onclick="clicked(0)">
+                    <input class="darker" type="button" value="." onclick="clicked('.')">
+                    <input class="pinkButton bigger" type="button" value="=" onclick="equate()" >
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container">
+        <div class="calculator">
+            <div id="header">
+                <p class="buttonPadding">Calculator</p>
+                <div class="headerButton">
+                    <p class="buttonPadding">–</p>
+                    <p class="buttonPadding">◻</p>
+                    <p class="buttonPadding2">×</p>
+                </div>
+            </div>
+            <form action="">
+                <div class="display">
+                    <input id="textBox" type="text" name="display" value="">
+                </div>
+                <div>
+                    <input type="button" value="%">
+                    <input type="button" value="CE">
+                    <input type="button" value="C">
+                    <input type="button" value="delete" onclick="deletes()">
+                </div>
+                <div>
+                    <input type="button" value="x">
+                    <input type="button" value="x">
+                    <input type="button" value="x">
+                    <input type="button" value="÷">
+                </div>
+                <div class="darkerButton">
+                    <input class="darker" type="button" value="7" onclick="clicked(7)">
+                    <input class="darker" type="button" value="8"  onclick="clicked(8)">
+                    <input class="darker" type="button" value="9"  onclick="clicked(9)">
+                    <input type="button" value="×">
+                </div>
+                <div class="darkerButton">
+                    <input class="darker" type="button" value="4"  onclick="clicked(4)">
+                    <input class="darker" type="button" value="5"  onclick="clicked(5)">
+                    <input class="darker" type="button" value="6"  onclick="clicked(6)">
+                    <input type="button" value="—">
+                </div>
+                <div class="darkerButton">
+                    <input class="darker" type="button" value="1">
+                    <input class="darker" type="button" value="2">
+                    <input class="darker" type="button" value="3">
+                    <input type="button" value="+">
+                </div>
+                <div class="darkerButton">
+                    <input class="darker" type="button" value="+/-">
+                    <input class="darker" type="button" value="0">
+                    <input class="darker" type="button" value=".">
+                    <input id="pinkButton" class="equals" type="button" value="=">
+                </div>
+            </form>
+        </div>
+    </div>
+           --->
