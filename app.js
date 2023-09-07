@@ -23,12 +23,7 @@ function clicked(num) {
 }
 
 function deletes() {
-
-    screen.value = '0';
-
-    if (screen.value === '0') {
-        screen2.value = '';
-    }
+    screen.slice(0, -1)
 };
 
 function deletes2() {
